@@ -21,7 +21,7 @@
 
 
 
-<body class="level1">
+<body class="{% if page.level %}{{ page.level }} {% else %} level1 {% endif %}">
 
 
 <div id="dog_tag"><p><a href="{{site.baseurl}}"><img src="{{site.baseurl}}images/logoNew.gif" alt="HTML Dog 中文翻译" width="80" height="58"><span></span></a></p></div>

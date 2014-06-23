@@ -1,17 +1,25 @@
 ---
 layout: default
-title: HTML 教程
-category: html
-level:level2
+title: HTML 初级教程
+category: beginner
+level:level3
 ---
-<nav id="you_are_here"><a href="{{site.baseurl}}" id="home_link">首页</a><span> &rarr; </span><a href="{{site.baseurl}}guides/">教程</a><span id="yah_last"> &rarr; </span></nav>
+
+<nav id="you_are_here"><a href="{{site.baseurl}}" id="home_link">首页</a><span> &rarr; </span><a href="{{site.baseurl}}guides/">教程</a><span> &rarr; </span><a href="{{site.baseurl}}guides/html/">HTML</a><span id="yah_last"> &rarr; </span></nav>
+
 <article>
+
 <header>
 
 	<div id="flowerbreak" class="flowernum2 flowerextra"></div>
-	<h1>HTML 教程</h1>
+	<h1>HTML 初级教程</h1>
 
-	<p>HTML 是网页设计最基础的部分， 与<a href="{{site.baseurl}}guides/css/"> CSS </a>不同，<em>HyperText Markup Language 超文本标记语言</em> 可以简单优雅的定义<em>内容</em>结构。</p>
+	<p>此章为面向零基础学员。</p>
+
+    <p>在学习CSS初级之前，你只要跟着教程顺序渐进的学习就行，非常简单。</p>
+
+
+	
 		<aside id="flower_primary" class="flower">
 			<div id="bsap_1294690" class="bsarocks bsap_42de178ce2c5601e0c8eebfd00a854ae"></div>
 		</aside>
@@ -21,13 +29,12 @@ level:level2
 
 <section id="main_content">
 
-<aside class="note five">
-<p>本教程开始使用<em>HTML5</em>。它能展现更多现代浏览器的特性和优点，非常棒。</p>
-</aside>
 
-<h2><a href="{{site.baseurl}}guides/html/beginner/">HTML 初级教程</a></h2>
 
-<p>手把手学习 HTML 基础，新人从这里开始。</p>
+
+<p>记住最主要的事情：HTML被用来赋予<em>语意</em>，CSS负责<em>呈现</em>。HTML只是合理架构好内容，视觉呈现由CSS负责。你可能在其他网页上看到不同的学习安排，但是HTML Dog 中文翻译注重的是一开始就进入最佳实践，从一开始就用正确的方式，导致更好的结果的方法。</p>
+
+<h2>内容</h2>
 
 <ul>
 <li><a href="{{site.baseurl}}guides/html/beginner/gettingstarted/">起步</a>：开始制作第一个页面。</li>
@@ -42,36 +49,6 @@ level:level2
 <li><a href="{{site.baseurl}}guides/html/beginner/forms/">表单</a>： 用户提交的内容。</li>
 <li><a href="{{site.baseurl}}guides/html/beginner/conclusion/">章节回顾</a>：将以上所学内容应用到页面当中。</li>
 </ul>
-
-<h2><a href="{{site.baseurl}}guides/html/intermediate/">HTML 中级教程</a></h2>
-
-<p>一些常见并且很有用的技术技巧。</p>
-
-<ul>
-<li><a href="{{site.baseurl}}guides/html/intermediate/spandiv/">Span和Div</a>：没有特定语意，主要作用于CSS。</li>
-<li><a href="{{site.baseurl}}guides/html/intermediate/text/">文本：缩写， 引用， 编码 格式</a></li>
-<li><a href="{{site.baseurl}}guides/html/intermediate/metatags/">Meta元标签</a>：页面额外的信息定义。</li>
-<li><a href="{{site.baseurl}}guides/html/intermediate/tables/">表格：行和列表</a>：表格基本应用，单元格等。</li>
-<li><a href="{{site.baseurl}}guides/html/intermediate/definitionlists/">自定义列表</a>： 自定义一个列表。</li>
-<li><a href="{{site.baseurl}}guides/html/intermediate/text2/">文本：地址， 定义， 方向，编辑 格式</a></li>
-<li><a href="{{site.baseurl}}guides/html/intermediate/sectioning/">区域</a>：语意化定义文档结构。</li>
-</ul>
-
-<h2><a href="{{site.baseurl}}guides/html/advanced/">HTML 高级教程</a></h2>
-
-<p>更标准合理的应用 HTML，比如链接的可访问性等。</p>
-
-<ul>
-<li><a href="{{site.baseurl}}guides/html/advanced/text/">文本： 时间， 标记，&#8220;展示表现&#8221;。</li>
-<li><a href="{{site.baseurl}}guides/html/advanced/conditionalcomments/">条件注释</a>。</li>
-<li><a href="{{site.baseurl}}guides/html/advanced/tables/">表格： 栏， 抬头，脚注</a>。</li>
-<li><a href="{{site.baseurl}}guides/html/advanced/links/">可访问性链接</a>。</li>
-<li><a href="{{site.baseurl}}guides/html/advanced/forms/">可访问性表单</a>。</li>
-<li><a href="{{site.baseurl}}guides/html/advanced/html5forms1/">HTML5 表单 第一部分：Input 类型</a>。</li>
-<li><a href="{{site.baseurl}}guides/html/advanced/html5forms2/">HTML5 表单 第二部分： 属性 和 Date 列表</a>。</li>
-<li><a href="{{site.baseurl}}guides/html/advanced/embeddedcontent/">可嵌入内容： 视频、语音、画布</a>。</li>
-</ul>
-
 
 
 <aside id="flowers">
@@ -99,9 +76,16 @@ level:level2
 
 
   <ul>
-  <li><a href="{{site.baseurl}}guides/css/">CSS 教程</a></li>
-  <li><a href="{{site.baseurl}}guides/javascript/">JavaScript 教程</a></li>
+  <li>下一页： <a href="gettingstarted/">起步</a></li>
+  <li><a href="{{site.baseurl}}guides/css/beginner/">CSS 初级教程</a></li>
+  <li><a href="{{site.baseurl}}guides/html/intermediate/">HTML 中级教程</a></li>
   </ul>
+
+
+
+
+
+
 
 </footer>
 
@@ -115,7 +99,21 @@ level:level2
 <ul>
 <li><a href="{{site.baseurl}}guides/html/" class="asec">HTML</a>
 <ul>
-                    <li><a href="{{site.baseurl}}guides/html/beginner/">初级</a></li>
+                    <li><a href="{{site.baseurl}}guides/html/beginner/">初级</a>
+                    	<ul>
+								<li><a href="{{site.baseurl}}guides/html/beginner/gettingstarted/">起步</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/tags/">标签，属性和元素</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/titles/">页面标题</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/paragraphs/">段落</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/headings/">标题</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/lists/">列表</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/links/">链接</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/images/">图像</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/tables/">表格</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/forms/">表单</a></li>
+								<li><a href="{{site.baseurl}}guides/html/beginner/conclusion/">章节回顾</a></li>
+							</ul>
+                    </li>
                     <li><a href="{{site.baseurl}}guides/html/intermediate/">中级</a></li>
                     <li><a href="{{site.baseurl}}guides/html/advanced/">高级</a></li>
 </ul>
