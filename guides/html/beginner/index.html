@@ -1,22 +1,20 @@
 ---
 layout: default
-title: HTML 初级教程
-category: beginner
+title: 标签，属性和元素
+category: tags
 level: level3
 ---
 
-<nav id="you_are_here"><a href="{{site.baseurl}}" id="home_link">首页</a><span> &rarr; </span><a href="{{site.baseurl}}guides/">教程</a><span> &rarr; </span><a href="{{site.baseurl}}guides/html/">HTML</a><span id="yah_last"> &rarr; </span></nav>
+<nav id="you_are_here"><a href="{{site.baseurl}}" id="home_link">首页</a><span> &rarr; </span><a href="{{site.baseurl}}guides/">教程</a><span> &rarr; </span><a href="{{site.baseurl}}guides/html/">HTML</a><span> &rarr; </span><a href="{{site.baseurl}}guides/html/beginner/">初级</a><span id="yah_last"> &rarr; </span></nav>
 
 <article>
 
 <header>
 
 	<div id="flowerbreak" class="flowernum2 flowerextra"></div>
-	<h1>HTML 初级教程</h1>
+	<h1>标签，属性和元素</h1>
 
-	<p>此章为面向零基础学员。</p>
-
-    <p>在学习CSS初级之前，你只要跟着教程循序渐进的学习就行，非常简单。</p>
+	<p>虽然html基础是纯文本，我们还是需要增加一些东西让它变得耀眼。</p>
 
 
 	
@@ -28,28 +26,72 @@ level: level3
 </header>
 
 <section id="main_content">
+HTML文件的基础架构包括：标签及其中的内容。
+将文件改成一下这样：
+
+<!DOCTYPE html>
+<html>
+<body>
+    This is my first web page
+</body>
+</html>
+
+再次保存。回到网页浏览器，刷新页面。
+
+网页表面没有任何改变，但是HTML的目的是赋予意义，不是呈现。这个例子已经定义了网页一些基本元素。
+
+最上面的第一行，<!Doctype html>,是一个文件类型的申明。它同时告诉浏览器你偏好哪种HTML(这里是html5)。坚持申明很重要。如果你不这么做，浏览器会质疑你是否真知道自己在干什么，它也会不按常理出牌。
+
+回到主题，<html>是开始标签把所有东西赶在一起，然后告诉浏览器，在自己和</html>闭合标签之间的内容是一个HTML文件。在<body>和</body>之间的是将在浏览窗口出现的文件的主要内容。
 
 
 
+<h2>标签</h2>
 
-<p>记住最主要的事情：HTML被用来赋予<em>语意</em>，CSS负责<em>呈现</em>。HTML只是合理架构好内容，视觉呈现由CSS负责。你可能在其他网页上看到不同的学习安排，但是HTML Dog 中文翻译注重的是一开始就进入最佳实践，从一开始就用正确的方式，导致更好的结果的方法。</p>
+<p>HTML文件的基本结构就是用标签标记内容。</p>
 
-<h2>内容</h2>
+<p>将文件改成如下：</p>
 
-<ul>
-<li><a href="{{site.baseurl}}guides/html/beginner/gettingstarted/">起步</a>：开始制作第一个页面。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/tags/">标签，属性和元素</a>：制作HTML页面的基础。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/titles/">页面标题</a>： 标题。在页面特殊位置显示。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/paragraphs/">段落</a>： 用段落展示你的内容。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/headings/">标题</a>： 六个级别的标题。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/lists/">列表</a>： 定义一个有序和无序列表。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/links/">链接</a>：定义一个链接到其他页面。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/images/">图片</a>：比文本更多的展现形式。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/tables/">表格</a>：使用表格组织数据。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/forms/">表单</a>： 用户提交的内容。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/conclusion/">章节回顾</a>：将以上所学内容应用到页面当中。</li>
-</ul>
+<pre><code class="html">
+<em>&lt;!DOCTYPE html&gt;</em>
+<em>&lt;html&gt;</em>
+<em>&lt;body&gt;</em>
+    This is my first web page
+<em>&lt;/body&gt;</em>
+<em>&lt;/html&gt;</em>
+</code></pre>
 
+<p>再次保存。回到浏览器，重新页面</p>
+
+<p>网页表面没有任何改变，但是HTML的目的是语意化定义内容结构，不是呈现。这个例子已经定义了网页一些基本元素。</p>
+
+<p>最上面的第一行， <code>&lt;!DOCTYPE html&gt;</code>, 是一个 <em>文档类型声明</em> 它同时告诉浏览器你偏好哪种HTML(这里是html5)。 坚持申明很重要。如果你不这么做，浏览器会质疑你是否真知道自己在干什么，它也会不按常理出牌。</p>
+
+<p>回到主题， <code>&lt;html&gt;</code> 是 <em>起始标签</em> 包含内容直到 <code>&lt;/html&gt;</code> <em>闭合标签</em> 之间的内容就是HTML文档内容。 而 <code>&lt;body&gt;</code> 到 <code>&lt;/body&gt;</code> 是文档的主要内容，这部分内容会在浏览器里呈现出来。</p>
+
+<h3>闭合标签</h3>
+
+<p><code>&lt;/body&gt;</code> 和 <code>&lt;/html&gt;</code> 闭合标签与之对应着起始标签。</p>
+
+<aside class="note i">
+<p>不是所有的标签都这么闭合 (<code>&lt;html&gt;&lt;/html&gt;</code>) 有些没有内容的标签将会自行闭合，拿换行符line-break举例，像这样： <code>&lt;br&gt;</code> —换行符没有内容做靠山，所以只能自己悲催一个人呆着。我们一会再看几个例子。你要记住所有有内容的标签都必须闭合。格式如下：开始标签——内容——闭合标签。 严格来说，这不是必需要求，但是这是个惯例，当我们用这个教程时，它是个让我们更干净、容易理解代码的练习。</p>
+</aside>
+
+<aside class="note five">
+你可能遇到过自闭标签，其中的br标签，会用<br/>代替简单的<br>。这是XHTML的剩余部分，另一种基于标记语言xml的html形式。HTML5比HTML更稳定，与任一格式都兼容。萝卜白菜，各有所爱。艰难的选择下，我们掷了个硬币，于是决定用简单的版本。
+<p>
+你可能遇到过自闭标签，其中的<a href="{{site.baseurl}}reference/htmltags/br/" class="acode"><code>br</code></a>标签,会用<code><br/></code>代替简单的<code><br></code>。这是XHTML的剩余部分，另一种基于标记语言xml的html形式。HTML5比HTML更稳定，与任一格式都兼容。萝卜白菜，各有所爱。艰难的选择下，我们掷了个硬币，于是决定用简单的版本。
+</p></aside>
+
+<h2>属性</h2>
+<p>标签也有<em>属性</em>，这让它们赋有更多的信息。属性在开始标签中出现，他们的值由双引号包围。举例如下<code>&lt;tag attribute="value"&gt;Margarine&lt;/tag&gt;</code>。过后再详细介绍。</p>
+
+<aside class="note">
+<p>再次提醒。双引号不是必要的。但是网站为稳定和干净，这是个良好练习习惯。照着做！</p>
+</aside>
+
+<h2>元素</h2>
+<p>标签主要标记一个元素的开始和结束。元素是编造网页的组成部分。你可以说，所有在<code>&lt;body&gt;</code> 和 <code>&lt;/body&gt;</code> 标签间（包括）都是主体元素。再举例， 鉴于<code>&lt;title&gt;</code>和<code>&lt;/title&gt;</code> 是 <em>标签</em>, <code>&lt;title&gt;Rumple Stiltskin&lt;/title&gt;</code>是一个标题<em>元素</em>.</p>
 
 <aside id="flowers">
 	<div class="flower">
@@ -73,14 +115,17 @@ level: level3
 <footer id="related">
 
   <h2>相关页面</h2>
-
-
+ 
   <ul>
-  <li>下一页： <a href="gettingstarted/">起步</a></li>
-  <li><a href="{{site.baseurl}}guides/css/beginner/">CSS 初级教程</a></li>
-  <li><a href="{{site.baseurl}}guides/html/intermediate/">HTML 中级教程</a></li>
+  <li>下一页： <a href="{{site.baseurl}}guides/html/beginner/titles/">页面标题</a></li>
+  <li>上一页： <a href="{{site.baseurl}}guides/html/beginner/gettingstarted/">起步</a></li>
   </ul>
 
+  <h3>手册</h3>
+  <ul>
+  <li><a href="{{site.baseurl}}reference/htmltags/html/">html</a></li>
+  <li><a href="{{site.baseurl}}reference/htmltags/body/">body</a></li>
+  </ul>
 </footer>
 
 
