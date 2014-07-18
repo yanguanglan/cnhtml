@@ -1,24 +1,23 @@
 ---
 layout: default
-title: HTML 初级教程
-category: beginner
+title: 页面标题
+category: titles
 level: level3
 ---
-<nav id="you_are_here"><a href="{{site.baseurl}}" id="home_link">首页</a><span> &rarr; </span><a href="{{site.baseurl}}guides/">教程</a><span> &rarr; </span><a href="{{site.baseurl}}guides/html/">HTML</a><span id="yah_last"> &rarr; </span></nav>
+
+<nav id="you_are_here"><a href="{{site.baseurl}}" id="home_link">首页</a><span> &rarr; </span><a href="{{site.baseurl}}guides/">教程</a><span> &rarr; </span><a href="{{site.baseurl}}guides/html/">HTML</a><span> &rarr; </span><a href="{{site.baseurl}}guides/html/beginner/">初级</a><span id="yah_last"> &rarr; </span></nav>
 
 <article>
 
 <header>
 
 	<div id="flowerbreak" class="flowernum2 flowerextra"></div>
-	<h1>HTML 初级教程</h1>
+	<h1>页面标题</h1>
 
-	<p>此章为面向零基础学员。</p>
-
-    <p>在学习CSS初级之前，你只要跟着教程循序渐进的学习就行，非常简单。</p>
+	<p>所有html网页都应该有个<em>标题</em>。</p>
 
 
-
+	
 		<aside id="flower_primary" class="flower">
 			<div id="bsap_1294690" class="bsarocks bsap_42de178ce2c5601e0c8eebfd00a854ae"></div>
 		</aside>
@@ -31,30 +30,35 @@ level: level3
 
 
 
-<p>记住最主要的事情：HTML被用来赋予<em>语意</em>，CSS负责<em>呈现</em>。HTML只是合理架构好内容，视觉呈现由CSS负责。你可能在其他网页上看到不同的学习安排，但是HTML Dog 中文翻译注重的是一开始就进入最佳实践，从一开始就用正确的方式，导致更好的结果的方法。</p>
+<p>在网页增加标题，代码更改如下：</p>
 
-<h2>内容</h2>
+<pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+<em>&lt;head&gt;</em>
+<em>    &lt;title&gt;My first web page&lt;/title&gt;</em>
+<em>&lt;/head&gt;</em>
+&lt;body&gt;
+    This is my first web page
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
-<ul>
-<li><a href="{{site.baseurl}}guides/html/beginner/gettingstarted/">起步</a>：开始制作第一个页面。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/tags/">标签，属性和元素</a>：制作HTML页面的基础。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/titles/">页面标题</a>： 标题。在页面特殊位置显示。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/paragraphs/">段落</a>： 用段落展示你的内容。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/headings/">标题</a>： 六个级别的标题。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/lists/">列表</a>： 定义一个有序和无序列表。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/links/">链接</a>：定义一个链接到其他页面。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/images/">图片</a>：比文本更多的展现形式。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/tables/">表格</a>：使用表格组织数据。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/forms/">表单</a>： 用户提交的内容。</li>
-<li><a href="{{site.baseurl}}guides/html/beginner/conclusion/">章节回顾</a>：将以上所学内容应用到页面当中。</li>
-</ul>
+<p>我们增加了新的元素，从<a href="{{site.baseurl}}reference/htmltags/head/" class="acode"><code>head</code></a>和<a href="{{site.baseurl}}reference/htmltags/title/" class="acode"><code>title</code></a>标签开始（注意他们如何闭合）</p>
+
+<p>元素head（ <code>&lt;head&gt;</code>开始  <code>&lt;/head&gt;</code>闭合中间部分内容 ）在body元素前出现（ <code>&lt;body&gt;</code>开始  <code>&lt;/body&gt;</code>闭合中间部分内容 ）,包含了网页的相关信息。head元素里的信息不会在浏览器中出现。</p>
+
+<p>我们一会能发现head元素中有其他元素，但是<em>title</em>元素是最重要的。</p>
+
+<p>如果你在浏览器中看这个文件运行（保存然后刷新），你会发现”my first page”出现在选项卡和窗口的标题栏（不是实际的画布区域）。你在title标签间输入的文本成了文件的标题。如果你把这页加入收藏夹（或者是书签，看浏览器）。你会看见这个标题也出现在这里。
+</p>
 
 
 <aside id="flowers">
 	<div class="flower">
 		<div id="bsap_1294762" class="bsarocks bsap_42de178ce2c5601e0c8eebfd00a854ae"></div>
 	</div>
-
+	
 	<div class="blossom">
 		<div id="bsap_1294763" class="bsarocks bsap_42de178ce2c5601e0c8eebfd00a854ae"></div>
 		<div id="bsap_1294764" class="bsarocks bsap_42de178ce2c5601e0c8eebfd00a854ae"></div>
@@ -75,13 +79,20 @@ level: level3
 
 
   <ul>
-  <li>下一页： <a href="gettingstarted/">起步</a></li>
-  <li><a href="{{site.baseurl}}guides/css/beginner/">CSS 初级教程</a></li>
-  <li><a href="{{site.baseurl}}guides/html/intermediate/">HTML 中级教程</a></li>
+  <li>下一页：<a href="{{site.baseurl}}guides/html/beginner/paragraphs/">段落</a></li>
+  <li>上一页：<a href="{{site.baseurl}}guides/html/beginner/tags/">标签，属性和元素</a></li>
   </ul>
 
 
 
+
+
+
+  <h3>手册</h3>
+  <ul>
+  <li><a href="{{site.baseurl}}htmltags/head/">head</a></li>
+  <li><a href="{{site.baseurl}}htmltags/title/">title</a></li>
+  </ul>
 
 
 
